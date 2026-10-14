@@ -1,0 +1,33 @@
+@use "variables" as v;
+
+@mixin flex-layout($direction: row, $gap: v.$spacing-md) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin glass-card($padding: 25px, $radius: v.$radius-md) {
+  padding: $padding;
+  background: v.$color-card;
+  border: 1px solid v.$color-border;
+  border-radius: $radius;
+}
+
+@mixin button-style($background: v.$color-primary) {
+  color: v.$color-text;
+  background: $background;
+  border: 0;
+  border-radius: v.$radius-sm;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  &:hover {
+    background: v.$color-hover;
+  }
+}
+
+@mixin page-padding($desktop: 35px, $mobile: 20px) {
+  padding: $desktop;
+  @media (max-width: 700px) {
+    padding: $mobile;
+  }
+}

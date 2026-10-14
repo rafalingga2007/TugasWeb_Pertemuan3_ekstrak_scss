@@ -1,0 +1,46 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-height: 100vh; font-family: Arial, sans-serif; color: #fff; line-height: 1.6; background: #000; }
+.background { position: fixed; top: 50%; left: 50%; width: 100vh; height: 100vw; object-fit: cover; transform: translate(-50%, -50%) rotate(-90deg); z-index: -2; }
+header { position: relative; min-height: 100vh; padding: 25px 65px; display: flex; flex-direction: column; gap: 0; justify-content: flex-start; background: rgba(0, 0, 0, 0.25); }
+header h1 { margin: 0; font-size: 60px; }
+header p { margin: 10px 0; font-size: 18px; }
+nav { margin-top: 30px; }
+nav ul { display: flex; flex-direction: row; gap: 20px; padding: 0; margin: 0; list-style: none; }
+nav a { display: block; padding: 10px 20px; color: #fff; text-decoration: none; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.3); border-radius: 10px; transition: background .3s ease; }
+nav a:hover { background: #8b5cf6; }
+main { width: 90%; max-width: 1100px; margin: auto; }
+section { margin: 60px 0; padding: 35px; background: rgba(0,0,0,.65); border-radius: 20px; }
+section h2 { font-size: 35px; }
+section h3 { font-size: 24px; }
+section p { font-size: 17px; }
+#about figure { margin: 20px 0; text-align: center; }
+#about figure img { width: 300px; max-width: 100%; height: auto; border-radius: 20px; }
+#about figcaption { margin-top: 10px; font-style: italic; }
+#about article, #project article, #hobby article, #hobby aside { padding: 25px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.3); border-radius: 15px; }
+#project { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+#project h2 { grid-column: 1 / -1; }
+#project article { margin: 0; }
+#project a { display: inline-block; padding: 10px 18px; color: #fff; text-decoration: none; background: #6d28d9; border-radius: 8px; transition: background .3s ease; }
+#project a:hover { background: #8b5cf6; }
+#hobby > ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding-left: 20px; }
+#hobby article, #hobby aside { margin: 20px 0; }
+#skill ul { display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap; padding: 0; list-style: none; }
+#skill li { padding: 10px 20px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.3); border-radius: 10px; }
+form { width: 100%; }
+fieldset { padding: 30px; border: 1px solid rgba(255,255,255,.3); border-radius: 15px; }
+legend { padding: 0 10px; font-size: 22px; }
+input, select, textarea { width: 100%; padding: 12px; color: #fff; background: rgba(0,0,0,.5); border: 1px solid rgba(255,255,255,.3); border-radius: 8px; }
+input[type="color"] { height: 50px; padding: 3px; }
+input[type="range"] { padding: 0; }
+button { padding: 12px 22px; margin-right: 10px; color: #fff; background: #6d28d9; border: 0; border-radius: 8px; cursor: pointer; transition: background .3s ease; }
+button:hover { background: #8b5cf6; }
+footer { padding: 30px; text-align: center; background: rgba(0,0,0,.8); }
+@media (max-width: 700px) {
+  header { padding: 25px; }
+  header h1 { font-size: 40px; }
+  nav ul { flex-direction: column; }
+  section { padding: 20px; }
+  #project { grid-template-columns: 1fr; }
+  #hobby > ul { grid-template-columns: 1fr; }
+}

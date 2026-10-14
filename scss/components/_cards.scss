@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+#about article,
+#project article,
+#hobby article,
+#hobby aside {
+  @include m.glass-card();
+}
+
+#about article {
+  background: v.$color-card;
+}
+
+#project article {
+  margin: 0;
+}

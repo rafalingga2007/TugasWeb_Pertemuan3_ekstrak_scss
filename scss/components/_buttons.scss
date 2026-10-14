@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+#project a {
+  display: inline-block;
+  padding: v.$spacing-xs 18px;
+  color: v.$color-text;
+  text-decoration: none;
+  background: v.$color-primary;
+  border-radius: v.$radius-sm;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: v.$color-hover;
+  }
+}
+
+button {
+  padding: 12px 22px;
+  margin-right: v.$spacing-xs;
+  @include m.button-style();
+}

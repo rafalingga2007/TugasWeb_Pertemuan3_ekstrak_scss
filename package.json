@@ -1,0 +1,12 @@
+{
+  "name": "boku-no-sekai-scss",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "sass scss/main.scss style.css --style=expanded",
+    "watch:css": "sass --watch scss/main.scss:style.css --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}
